@@ -1,1 +1,1 @@
-# embedded_systems_online_diploma
+# Master_Embedded_Systems
