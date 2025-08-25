@@ -1,3 +1,12 @@
+/*
+ * Program: Matrix Addition (2x2)
+ * Author : Ahmed
+ *
+ * Description:
+ * This program takes two 2x2 matrices as input from the user,
+ * adds them element by element, and prints the resulting matrix.
+ */
+
 #include <stdio.h>
 
 int main() {
@@ -21,20 +30,22 @@ int main() {
             scanf("%f", &matrixB[i][j]);
         }
     }
-	
-	// Adding matrices 
-	for (i = 0; i < 2; i++) {
-        for (j = 0; j < 2; j++) {
-			matrixA_B[i][j] = matrixA[i][j] + matrixB[i][j];
-        }
-    }	
 
-	// Printing result matrix
-	printf("\nSum of Matrices: \n");
-	for (i = 0; i < 2; i++) {
-		for(j = 0; j < 2; j++) {
-			printf("%.2f\t", matrixA_B[i][j], matrixA_B[i][j]);
-		}
-		printf("\n");
-	}	
+    // Adding matrices
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            matrixA_B[i][j] = matrixA[i][j] + matrixB[i][j];
+        }
+    }
+
+    // Printing result matrix
+    printf("\nSum of Matrices: \n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%.2f\t", matrixA_B[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
 }

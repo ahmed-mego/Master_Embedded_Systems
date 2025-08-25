@@ -1,23 +1,20 @@
+// Program: Character Frequency
+// Description: Reads a string and a character, then counts its frequency.
+
 #include <stdio.h>
 
 int main() {
-    char str[50];
-    char ch;
-    int it = 0;
+    char str[50], ch;
+    int count = 0;
 
     printf("Enter a string: ");
-    gets(str);
-
-    printf("%s\n", str);
+    fgets(str, sizeof(str), stdin);
 
     printf("Enter a character to find frequency: ");
     scanf("%c", &ch);
 
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (ch == str[i]) {
-            it++;
-       }
-    }
+    for (int i = 0; str[i] != '\0'; i++)
+        if (str[i] == ch) count++;
 
-    printf("the frequency of %c = %d", ch, it);
+    printf("The frequency of %c = %d\n", ch, count);
 }

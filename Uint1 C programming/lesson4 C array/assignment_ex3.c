@@ -1,3 +1,14 @@
+/*
+ * Program: Matrix Transpose
+ * Author : Ahmed
+ *
+ * Description:
+ * This program takes a matrix (rows × columns) as input from the user,
+ * stores it in a 2D array, and computes its transpose by interchanging
+ * rows with columns. Finally, it prints both the original and transposed
+ * matrices.
+ */
+
 #include <stdio.h>
 
 int main() {
