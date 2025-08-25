@@ -26,7 +26,7 @@ int main() {
     }
 
     // Print original matrix
-    printf("\nOriginal Matrix:\n");
+    printf("\nEntered Matrix:\n");
     for (i = 0; i < r; i++) {
         for (j = 0; j < c; j++) {
             printf("%d\t", matrix[i][j]);
@@ -35,7 +35,7 @@ int main() {
     }
 
     // Print transpose
-    printf("\nTranspose Matrix:\n");
+    printf("\nTranspose of Matrix:\n");
     for (i = 0; i < c; i++) {
         for (j = 0; j < r; j++) {
             printf("%d\t", matrixT[i][j]);
