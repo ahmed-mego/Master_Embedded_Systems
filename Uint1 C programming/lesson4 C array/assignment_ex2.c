@@ -13,12 +13,11 @@ int main() {
 
     int n;
     float sum = 0;
+    float arr[50]; 
 
     // get the number of data from the user 
     printf("Enter the number of data: ");
     scanf("%d", &n);
-
-    float arr[n];   // declare array after knowing n
 
     // get the data from the user 
     for (int i = 0; i < n; i++) {

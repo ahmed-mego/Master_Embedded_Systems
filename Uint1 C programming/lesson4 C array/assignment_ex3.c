@@ -13,13 +13,11 @@
 
 int main() {
     int i, j, r, c;
-
+    int matrix[50][50];
+    int matrixT[50][50];
     // Input the matrix dimensions
     printf("Enter rows and columns of matrix: ");
     scanf("%d %d", &r, &c);
-
-    int matrix[r][c];
-    int matrixT[c][r];
 
     // Input the matrix
     for (i = 0; i < r; i++) {

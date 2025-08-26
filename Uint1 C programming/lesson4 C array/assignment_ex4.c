@@ -13,10 +13,10 @@
 
 int main() {
     int n, e, l;
+    int arr[50]; 
+
     printf("Enter number of elements: ");
     scanf("%d", &n);
-
-    int arr[n+1];   // +1 to allow room for insertion
 
     // Input elements
     for (int i = 0; i < n; i++) {
